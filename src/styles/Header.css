@@ -1,0 +1,43 @@
+.outline {
+  height: 96px;
+  padding: 0 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.navbar {
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover,
+.logo a:hover {
+  color: var(--secondary-color);
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .outline {
+    height: 76px;
+    padding: 0 1rem;
+  }
+}
