@@ -1,0 +1,123 @@
+[
+  {
+    "name": "EcomEcho e-commerce platform",
+    "year": "2023",
+    "liveDemoLink": "https://ecomecho.netlify.app/",
+    "githubLink": "https://github.com/haidanglevn/fs16_Frontend-project",
+    "description": "EcomEcho is a fullstack project built at Integrify. The frontend website provides an user-friendly interface for users to browse the products, add them to cart then create orders, while Admin user can easily manage the data on the database. The backend server provides data on API request, contains business logics and stored product + user data onto the database. It serves API endpoints protected by role-based authorization, which ensures secure storage and data access only for the right users.",
+    "techStack": [
+      {
+        "name": "React",
+        "icon": "../assets/icons/react.png"
+      },
+      {
+        "name": ".Net Core",
+        "icon": "../assets/icons/netcore.png"
+      },
+      {
+        "name": "PostgreSQL",
+        "icon": "../assets/icons/postgresql.png"
+      },
+      {
+        "name": "Typescript",
+        "icon": "../assets/icons/typescript.png"
+      },
+      {
+        "name": "Azure",
+        "icon": "../assets/icons/typescript.png"
+      },
+      {
+        "name": "Material UI",
+        "icon": "../assets/icons/mui.png"
+      }
+    ],
+    "images": [
+      "src/assets/ecomecho/ecomecho1.png",
+      "src/assets/ecomecho/ecomecho2.png",
+      "src/assets/ecomecho/ecomecho3.png",
+      "src/assets/ecomecho/ecomecho4.png",
+      "src/assets/ecomecho/ecomecho5.png"
+    ]
+  },
+  {
+    "name": "Colleague Feedback System for Exove",
+    "year": "2023",
+    "liveDemoLink": null,
+    "githubLink": "https://github.com/Colleague-Feedback-Team-1/colleague-feedback-frontend",
+    "description": "A fullstack app made in collaboration with Exove to create a solution for the company's colleague feedback process. Its main goals is to replace current process of gathering feedback with GG Form, storing result in GG Sheets with an automated system with user-friendly UI and a database to store feedback data.",
+    "techStack": [
+      {
+        "name": "React",
+        "icon": "../assets/icons/react.png"
+      },
+      {
+        "name": "NodeJS",
+        "icon": "../assets/icons/nodejs.png"
+      },
+      {
+        "name": "MongoDB",
+        "icon": "../assets/icons/mongodb.png"
+      },
+      {
+        "name": "Typescript",
+        "icon": "../assets/icons/typescript.png"
+      },
+      {
+        "name": "Material UI",
+        "icon": "../assets/icons/mui.png"
+      }
+    ],
+    "images": [
+      "src/assets/exove/exove1.png",
+      "src/assets/exove/exove2.png",
+      "src/assets/exove/exove3.png",
+      "src/assets/exove/exove4.png",
+      "src/assets/exove/exove5.png"
+    ]
+  },
+  {
+    "name": "SkillsBridge landing page for TUTORS Oy",
+    "year": "2023",
+    "liveDemoLink": "https://www.skillsbridge.eu/",
+    "githubLink": null,
+    "description": "A front-end focused project that my team built during the internship with Tutors Oy. The page introduces SkillsBridge, an educational project funded by Erasmus+ that aims to research and build a platform to teach and learn game development. The page provides general information and encourage visitors to fill the research form to help the project. I contributed as both UX/UI Designer and FrontEnd Developer for the team.",
+    "techStack": [
+      {
+        "name": "React",
+        "icon": "../assets/icons/react.png"
+      },
+      {
+        "name": "Figma",
+        "icon": "../assets/icons/figma.png"
+      }
+    ],
+    "images": [
+      "src/assets/skillsbridge/skillsbridge1.png",
+      "src/assets/skillsbridge/skillsbridge2.png",
+      "src/assets/skillsbridge/skillsbridge3.png",
+      "src/assets/skillsbridge/skillsbridge4.png",
+      "src/assets/skillsbridge/skillsbridge5.png"
+    ]
+  },
+  {
+    "name": "Travel Planner App",
+    "year": "2022",
+    "liveDemoLink": "https://delightful-sherbet-1b7473.netlify.app/",
+    "githubLink": "https://github.com/haidanglevn/BCH_Team5_TravelPlanner",
+    "description": "A mobile travel planner webapp made as a team project in Helsinki Business College. The app ultilizes the Google Firebase to store data and manage login, together with OpenWeatherAPI and MapBoxAPI for location and weather data. Users can browse famous local attractions and plan their next trip with the built-in planner.",
+    "techStack": [
+      {
+        "name": "React",
+        "icon": "../assets/icons/react.png"
+      },
+      {
+        "name": "Firebase",
+        "icon": "../assets/icons/firebase.png"
+      }
+    ],
+    "images": [
+      "src/assets/travelplanner/travelplanner1.png",
+      "src/assets/travelplanner/travelplanner2.png"
+    ]
+  }
+]

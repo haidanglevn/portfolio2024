@@ -20,6 +20,7 @@
   background-color: #1a1a1a;
   width: 600px;
   height: 600px;
+  border-radius: 30px;
 }
 
 .project-card-img img {
@@ -49,5 +50,15 @@
 
   .project-card-info {
     width: 90%;
+  }
+}
+
+@media (min-width: 1500px) {
+  .project-card {
+    gap: 10px;
+  }
+
+  .project-card-info {
+    width: 50%;
   }
 }

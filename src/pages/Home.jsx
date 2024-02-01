@@ -1,69 +1,151 @@
-import React from 'react'
-import Header from '../components/Header'
-import "../styles/Home.css"
-import portrait from '../assets/portrait.png'
-import ActionButton from '../components/ActionButton'
-import { IconButton } from '@mui/material'
-import LinkedInIcon from '@mui/icons-material/LinkedIn'
-import GitHubIcon from '@mui/icons-material/GitHub'
-import ProjectCard from '../components/ProjectCard'
+import { React, useState, useEffect } from "react";
+import Header from "../components/Header";
+import "../styles/Home.css";
+import portrait from "../assets/portrait.png";
+import ActionButton from "../components/ActionButton";
+import { Button, IconButton } from "@mui/material";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import EastIcon from "@mui/icons-material/East";
+import ProjectCard from "../components/ProjectCard";
+
+import projectsData from "../ProjectsData.json";
+import { Link } from "react-router-dom";
 
 function Home() {
+  const [projects, setProjects] = useState([]);
+
+  console.log(projects);
+
+  useEffect(() => {
+    if (projectsData.length !== 0) {
+      setProjects(projectsData);
+    }
+  }, [projectsData]);
+
+  const renderProjectCards = () => {
+    if (projects.length === 0) {
+      console.log("run1");
+      return <div>Loading...</div>;
+    } else {
+      console.log("run2");
+      return projects.map((project, index) => {
+        return <ProjectCard {...project} />;
+      });
+    }
+  };
+
   return (
-    <div className='home'>
-      <Header/>
-      <div className='home-outline'>
+    <div className="home">
+      <Header />
+      <div className="home-outline">
         <div className="hero">
-          <div className='hero-left'>
-            <h1>Dang, <br /> let's code!</h1>
-            <p>A Helsinki based full-stack developer with passion for consumer <br /> mobile technology and creating aesthetic websites.</p>
-            <div className='button-stack'>
-              <ActionButton text="Contact Me"/>
-              <IconButton sx={{
-                backgroundColor:'var(--gray-color)',
-                color:'var(--secondary-color)',
-                height: '54px',
-                width:'54px',
-                transition: 'all 1s',
-                '&:hover': {
-                  backgroundColor: "var(--secondary-color)",
-                  color:'black'
-                },
-                }}>
-                <LinkedInIcon/>
+          <div className="hero-left">
+            <h1>
+              Dang, <br /> let's code!
+            </h1>
+            <p>
+              A Helsinki based full-stack developer with passion for consumer{" "}
+              <br /> mobile technology and creating aesthetic websites.
+            </p>
+            <div className="button-stack">
+              <ActionButton
+                text="Download CV"
+                link={
+                  "https://drive.google.com/file/d/1ug8E0pTO9EkIKPqMPHbkw2f3zuiAeWqa/view?usp=sharing"
+                }
+              />
+              <IconButton
+                sx={{
+                  backgroundColor: "var(--gray-color)",
+                  color: "var(--secondary-color)",
+                  height: "54px",
+                  width: "54px",
+                  transition: "all 1s",
+                  "&:hover": {
+                    backgroundColor: "var(--secondary-color)",
+                    color: "black",
+                  },
+                }}
+              >
+                <Link
+                  to={"https://www.linkedin.com/in/dang-le-hai/"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: "inherit" }}
+                >
+                  <LinkedInIcon />
+                </Link>
               </IconButton>
-              <IconButton sx={{
-                backgroundColor:'var(--gray-color)',
-                color:'var(--secondary-color)',
-                height: '54px',
-                width:'54px',
-                transition: 'all 1s',
-                '&:hover': {
-                  backgroundColor: "var(--secondary-color)",
-                  color:'black'
-                },
-                }}>
-                <GitHubIcon/>
+              <IconButton
+                sx={{
+                  backgroundColor: "var(--gray-color)",
+                  color: "var(--secondary-color)",
+                  height: "54px",
+                  width: "54px",
+                  transition: "all 1s",
+                  "&:hover": {
+                    backgroundColor: "var(--secondary-color)",
+                    color: "black",
+                  },
+                }}
+              >
+                <Link
+                  to={"https://github.com/haidanglevn"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: "inherit" }}
+                >
+                  <GitHubIcon />
+                </Link>
               </IconButton>
             </div>
           </div>
-          <img src={portrait} alt="portrait" className='portrait'/>
+          <img src={portrait} alt="portrait" className="portrait" />
         </div>
-        <div className='featured-projects'>
-          <div className='featured-projects-title'>
+        <div className="featured-projects">
+          <div className="featured-projects-title">
             <h2>Featured Projects</h2>
-            <p>Here are some of the most recent projects that I worked on to become a <br />full-stack developer:</p>
+            <p>
+              Here are some of the most recent projects that I worked on to
+              become a <br />
+              full-stack developer:
+            </p>
+            <Button
+              endIcon={<EastIcon />}
+              sx={{
+                backgroundColor: "var(--secondary-color)",
+                fontWeight: "bold",
+                color: "black",
+                height: "54px",
+                padding: "20px",
+                margin: "20px 0",
+                borderRadius: "100px",
+                transition: "transform 1s",
+                "& .MuiButton-endIcon": {
+                  transition: "transform 1s",
+                },
+                "& a": {
+                  color: "black",
+                  marginRight: "10px",
+                },
+                "&:hover": {
+                  transform: "scale(1.1)",
+                  backgroundColor: "var(--secondary-color)",
+                  "& .MuiButton-endIcon": {
+                    transform: "scale(1.5)",
+                  },
+                },
+              }}
+            >
+              <Link to={"/"}>See all projects</Link>
+            </Button>
           </div>
-          <div className='featured-projects-stack'>
-            <ProjectCard/> 
-            <ProjectCard/> 
-            <ProjectCard/> 
-            <ProjectCard/> 
-          </div>
+          <div className="featured-projects-stack">{renderProjectCards()}</div>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;
