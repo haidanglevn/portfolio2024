@@ -7,10 +7,12 @@ import { Button, IconButton } from "@mui/material";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import EastIcon from "@mui/icons-material/East";
+import MailIcon from "@mui/icons-material/Mail";
 import ProjectCard from "../components/ProjectCard";
 
 import projectsData from "../ProjectsData.json";
 import { Link } from "react-router-dom";
+import Footer from "../components/Footer";
 
 function Home() {
   const [projects, setProjects] = useState([]);
@@ -143,6 +145,52 @@ function Home() {
           </div>
           <div className="featured-projects-stack">{renderProjectCards()}</div>
         </div>
+        <div className="about">
+          <div className="about-title">
+            <h2>About me</h2>
+            <div style={{ margin: "20px 0" }}>
+              <h3>I am a software developer based in Helsinki, Finland.</h3>
+              <p>
+                I have a Material Engineer background but decided to embark on a
+                career change in 2022. I studied software development at
+                Helsinki Business College and at Integrify, honing my skills
+                through various team projects and internships. My tech stacks
+                include React & Redux, Typescript, C# .Net Core, Firebase,
+                PostgreSQL and more.
+              </p>
+              <Button
+                endIcon={<EastIcon />}
+                sx={{
+                  backgroundColor: "var(--secondary-color)",
+                  fontWeight: "bold",
+                  color: "black",
+                  height: "54px",
+                  padding: "20px",
+                  margin: "20px 0",
+                  borderRadius: "100px",
+                  transition: "transform 1s",
+                  "& .MuiButton-endIcon": {
+                    transition: "transform 1s",
+                  },
+                  "& a": {
+                    color: "black",
+                    marginRight: "10px",
+                  },
+                  "&:hover": {
+                    transform: "scale(1.1)",
+                    backgroundColor: "var(--secondary-color)",
+                    "& .MuiButton-endIcon": {
+                      transform: "scale(1.5)",
+                    },
+                  },
+                }}
+              >
+                <Link to={"/about"}>More About Me</Link>
+              </Button>
+            </div>
+          </div>
+        </div>
+        <Footer />
       </div>
     </div>
   );

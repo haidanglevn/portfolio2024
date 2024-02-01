@@ -69,9 +69,6 @@
   padding: 80px 0;
 }
 
-.featured-projects-title {
-}
-
 .featured-projects-stack {
   width: 100%;
   display: flex;
@@ -85,5 +82,25 @@
 @media (max-width: 960px) {
   .featured-projects {
     align-items: center;
+  }
+}
+
+/* about me */
+.about {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.about-title {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 960px) {
+  .about-title {
+    width: 100%;
+    padding: 0 3rem;
   }
 }

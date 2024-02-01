@@ -1,0 +1,39 @@
+/* contact */
+.contact {
+  min-height: 50vh;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: flex-start;
+}
+.contact-title {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.link-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 30px 0;
+  gap: 30px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.copyright {
+  text-align: left;
+  font-display: italic;
+}
+
+@media (max-width: 960px) {
+  .contact-title {
+    width: 100%;
+    padding: 0 3rem;
+  }
+}
