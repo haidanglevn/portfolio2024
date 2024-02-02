@@ -7,7 +7,6 @@ import { Button, IconButton } from "@mui/material";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import EastIcon from "@mui/icons-material/East";
-import MailIcon from "@mui/icons-material/Mail";
 import ProjectCard from "../components/ProjectCard";
 
 import projectsData from "../ProjectsData.json";
@@ -16,8 +15,6 @@ import Footer from "../components/Footer";
 
 function Home() {
   const [projects, setProjects] = useState([]);
-
-  console.log(projects);
 
   useEffect(() => {
     if (projectsData.length !== 0) {
@@ -105,7 +102,7 @@ function Home() {
           </div>
           <img src={portrait} alt="portrait" className="portrait" />
         </div>
-        <div className="featured-projects">
+        <div id="featured-projects" className="featured-projects">
           <div className="featured-projects-title">
             <h2>Featured Projects</h2>
             <p>
