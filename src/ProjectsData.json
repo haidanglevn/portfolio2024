@@ -8,35 +8,35 @@
     "techStack": [
       {
         "name": "React",
-        "icon": "../assets/icons/react.png"
+        "icon": "/assets/icons/react.png"
       },
       {
         "name": ".Net Core",
-        "icon": "../assets/icons/netcore.png"
+        "icon": "/assets/icons/netcore.png"
       },
       {
         "name": "PostgreSQL",
-        "icon": "../assets/icons/postgresql.png"
+        "icon": "/assets/icons/postgresql.png"
       },
       {
         "name": "Typescript",
-        "icon": "../assets/icons/typescript.png"
+        "icon": "/assets/icons/typescript.png"
       },
       {
         "name": "Azure",
-        "icon": "../assets/icons/typescript.png"
+        "icon": "/assets/icons/typescript.png"
       },
       {
         "name": "Material UI",
-        "icon": "../assets/icons/mui.png"
+        "icon": "/assets/icons/mui.png"
       }
     ],
     "images": [
-      "src/assets/ecomecho/ecomecho1.png",
-      "src/assets/ecomecho/ecomecho2.png",
-      "src/assets/ecomecho/ecomecho3.png",
-      "src/assets/ecomecho/ecomecho4.png",
-      "src/assets/ecomecho/ecomecho5.png"
+      "/assets/ecomecho/ecomecho1.png",
+      "/assets/ecomecho/ecomecho2.png",
+      "/assets/ecomecho/ecomecho3.png",
+      "/assets/ecomecho/ecomecho4.png",
+      "/assets/ecomecho/ecomecho5.png"
     ]
   },
   {
@@ -48,31 +48,31 @@
     "techStack": [
       {
         "name": "React",
-        "icon": "../assets/icons/react.png"
+        "icon": "/assets/icons/react.png"
       },
       {
         "name": "NodeJS",
-        "icon": "../assets/icons/nodejs.png"
+        "icon": "/assets/icons/nodejs.png"
       },
       {
         "name": "MongoDB",
-        "icon": "../assets/icons/mongodb.png"
+        "icon": "/assets/icons/mongodb.png"
       },
       {
         "name": "Typescript",
-        "icon": "../assets/icons/typescript.png"
+        "icon": "/assets/icons/typescript.png"
       },
       {
         "name": "Material UI",
-        "icon": "../assets/icons/mui.png"
+        "icon": "/assets/icons/mui.png"
       }
     ],
     "images": [
-      "src/assets/exove/exove1.png",
-      "src/assets/exove/exove2.png",
-      "src/assets/exove/exove3.png",
-      "src/assets/exove/exove4.png",
-      "src/assets/exove/exove5.png"
+      "/assets/exove/exove1.png",
+      "/assets/exove/exove2.png",
+      "/assets/exove/exove3.png",
+      "/assets/exove/exove4.png",
+      "/assets/exove/exove5.png"
     ]
   },
   {
@@ -84,19 +84,19 @@
     "techStack": [
       {
         "name": "React",
-        "icon": "../assets/icons/react.png"
+        "icon": "/assets/icons/react.png"
       },
       {
         "name": "Figma",
-        "icon": "../assets/icons/figma.png"
+        "icon": "/assets/icons/figma.png"
       }
     ],
     "images": [
-      "src/assets/skillsbridge/skillsbridge1.png",
-      "src/assets/skillsbridge/skillsbridge2.png",
-      "src/assets/skillsbridge/skillsbridge3.png",
-      "src/assets/skillsbridge/skillsbridge4.png",
-      "src/assets/skillsbridge/skillsbridge5.png"
+      "/assets/skillsbridge/skillsbridge1.png",
+      "/assets/skillsbridge/skillsbridge2.png",
+      "/assets/skillsbridge/skillsbridge3.png",
+      "/assets/skillsbridge/skillsbridge4.png",
+      "/assets/skillsbridge/skillsbridge5.png"
     ]
   },
   {
@@ -108,16 +108,16 @@
     "techStack": [
       {
         "name": "React",
-        "icon": "../assets/icons/react.png"
+        "icon": "/assets/icons/react.png"
       },
       {
         "name": "Firebase",
-        "icon": "../assets/icons/firebase.png"
+        "icon": "/assets/icons/firebase.png"
       }
     ],
     "images": [
-      "src/assets/travelplanner/travelplanner1.png",
-      "src/assets/travelplanner/travelplanner2.png"
+      "/assets/travelplanner/travelplanner1.png",
+      "/assets/travelplanner/travelplanner2.png"
     ]
   }
 ]

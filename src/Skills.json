@@ -2,71 +2,71 @@
   {
     "name": "React",
     "type": "front-end",
-    "icon": "src/assets/icons/react.png"
+    "icon": "/assets/icons/react.png"
   },
   {
     "name": ".Net Core",
     "type": "back-end",
-    "icon": "src/assets/icons/netcore.png"
+    "icon": "/assets/icons/netcore.png"
   },
   {
     "name": "PostgreSQL",
     "type": "database",
-    "icon": "src/assets/icons/postgresql.png"
+    "icon": "/assets/icons/postgresql.png"
   },
   {
     "name": "Typescript",
     "type": "front-end",
-    "icon": "src/assets/icons/typescript.png"
+    "icon": "/assets/icons/typescript.png"
   },
   {
     "name": "Azure",
     "type": "database",
-    "icon": "src/assets/icons/azure.png"
+    "icon": "/assets/icons/azure.png"
   },
   {
     "name": "Material UI",
     "type": "front-end",
-    "icon": "src/assets/icons/mui.png"
+    "icon": "/assets/icons/mui.png"
   },
   {
     "name": "MongoDB",
     "type": "database",
-    "icon": "src/assets/icons/mongodb.png"
+    "icon": "/assets/icons/mongodb.png"
   },
   {
     "name": "NodeJS",
     "type": "back-end",
-    "icon": "src/assets/icons/nodejs.png"
+    "icon": "/assets/icons/nodejs.png"
   },
   {
     "name": "Figma",
     "type": "front-end",
-    "icon": "src/assets/icons/figma.png"
+    "icon": "/assets/icons/figma.png"
   },
   {
     "name": "Firebase",
     "type": "database",
-    "icon": "src/assets/icons/firebase.png"
+    "icon": "/assets/icons/firebase.png"
   },
   {
     "name": "Jest",
     "type": "others",
-    "icon": "src/assets/icons/jest.png"
+    "icon": "/assets/icons/jest.png"
   },
   {
     "name": "XUnit",
     "type": "others",
-    "icon": "src/assets/icons/xunit.png"
+    "icon": "/assets/icons/xunit.png"
   },
   {
     "name": "GitHub Action",
     "type": "others",
-    "icon": "src/assets/icons/githubaction.png"
+    "icon": "/assets/icons/githubaction.png"
   },
   {
     "name": "docker",
     "type": "others",
-    "icon": "src/assets/icons/docker.png"
+    "icon": "/assets/icons/docker.png"
   }
 ]
