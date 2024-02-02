@@ -1,7 +1,7 @@
 import { React, useState, useEffect } from "react";
 import Header from "../components/Header";
 import "../styles/Home.css";
-import portrait from "../assets/portrait.png";
+import portrait from "/assets/portrait.png";
 import ActionButton from "../components/ActionButton";
 import { Button, IconButton } from "@mui/material";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
