@@ -24,10 +24,8 @@ function Home() {
 
   const renderProjectCards = () => {
     if (projects.length === 0) {
-      console.log("run1");
       return <div>Loading...</div>;
     } else {
-      console.log("run2");
       return projects.map((project, index) => {
         return <ProjectCard {...project} />;
       });
@@ -51,7 +49,7 @@ function Home() {
               <ActionButton
                 text="Download CV"
                 link={
-                  "https://drive.google.com/file/d/1ug8E0pTO9EkIKPqMPHbkw2f3zuiAeWqa/view?usp=sharing"
+                  "https://drive.google.com/file/d/1M9IQPuNBVbZ_vLkIQRJ2PyUkWfuUKv4R/view?usp=sharing"
                 }
               />
               <IconButton
