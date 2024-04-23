@@ -18,6 +18,19 @@ function ProjectCard(project, index) {
       return (string += ",...");
     }
   }
+
+  function createTechStackIcon() {
+    return project.techStack.map((tech) => {
+      return (
+        <img
+          style={{ height: "30px", width: "30px" }}
+          src={tech.icon}
+          title={tech.name}
+        />
+      );
+    });
+  }
+
   return (
     <div className="project-card">
       <div className="project-card-img">
@@ -50,7 +63,7 @@ function ProjectCard(project, index) {
             sx={{ borderBottom: "1px solid white", padding: "10px 0" }}
           >
             <h4>Tech Stack</h4>
-            <p>{createTechStackString()}</p>
+            <div>{createTechStackIcon()}</div>
           </Stack>
         </Stack>
         <Stack

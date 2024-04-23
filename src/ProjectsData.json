@@ -1,5 +1,35 @@
 [
   {
+    "name": "MeChat Chat App (ongoing)",
+    "year": "2024",
+    "liveDemoLink": null,
+    "githubLink": "https://github.com/haidanglevn/mechat-frontend",
+    "description": "A full-stack, real-time chat application built using React and .NET Core. The goal of this project is to implement state-of-the-art features similar to those found in modern chat applications. Key functionalities include SignalR for real-time notifications, a typing indicator to show when users are typing, encrypted messages for enhanced security, and more.",
+    "techStack": [
+      {
+        "name": "React",
+        "icon": "/assets/icons/react.png"
+      },
+      {
+        "name": ".Net Core",
+        "icon": "/assets/icons/netcore.png"
+      },
+      {
+        "name": "PostgreSQL",
+        "icon": "/assets/icons/postgresql.png"
+      },
+      {
+        "name": "Typescript",
+        "icon": "/assets/icons/typescript.png"
+      },
+      {
+        "name": "Material UI",
+        "icon": "/assets/icons/mui.png"
+      }
+    ],
+    "images": ["/assets/mechat/mechat1.png"]
+  },
+  {
     "name": "EcomEcho e-commerce platform",
     "year": "2023",
     "liveDemoLink": "https://ecomecho.netlify.app/",
@@ -24,7 +54,7 @@
       },
       {
         "name": "Azure",
-        "icon": "/assets/icons/typescript.png"
+        "icon": "/assets/icons/azure.png"
       },
       {
         "name": "Material UI",
