@@ -63,7 +63,14 @@ function ProjectCard(project, index) {
             sx={{ borderBottom: "1px solid white", padding: "10px 0" }}
           >
             <h4>Tech Stack</h4>
-            <div>{createTechStackIcon()}</div>
+            <div
+              style={{
+                display: "flex",
+                gap: "10px",
+              }}
+            >
+              {createTechStackIcon()}
+            </div>
           </Stack>
         </Stack>
         <Stack
