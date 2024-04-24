@@ -9,8 +9,8 @@ function Footer() {
   return (
     <div className="contact">
       <div className="contact-title" style={{ margin: "20px 0" }}>
+        <h2>Let's get in touch!</h2>
         <p>
-          <h2>Let's get in touch!</h2>
           Did I pique your interest? Please feel free to reach out using any of
           the following methods:{" "}
         </p>

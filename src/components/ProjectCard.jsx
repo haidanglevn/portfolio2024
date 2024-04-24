@@ -7,17 +7,17 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import { Link } from "react-router-dom";
 
 function ProjectCard(project, index) {
-  function createTechStackString() {
-    if (project.techStack.length <= 3) {
-      return project.techStack.map((tech) => tech.name).join(", ");
-    } else {
-      let string = project.techStack
-        .slice(0, 3)
-        .map((tech) => tech.name)
-        .join(", ");
-      return (string += ",...");
-    }
-  }
+  // function createTechStackString() {
+  //   if (project.techStack.length <= 3) {
+  //     return project.techStack.map((tech) => tech.name).join(", ");
+  //   } else {
+  //     let string = project.techStack
+  //       .slice(0, 3)
+  //       .map((tech) => tech.name)
+  //       .join(", ");
+  //     return (string += ",...");
+  //   }
+  // }
 
   function createTechStackIcon() {
     return project.techStack.map((tech) => {
@@ -26,6 +26,7 @@ function ProjectCard(project, index) {
           style={{ height: "30px", width: "30px" }}
           src={tech.icon}
           title={tech.name}
+          key={tech.name}
         />
       );
     });

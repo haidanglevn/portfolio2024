@@ -27,7 +27,11 @@ function Home() {
       return <div>Loading...</div>;
     } else {
       return projects.map((project, index) => {
-        return <ProjectCard {...project} />;
+        return (
+          <div key={index}>
+            <ProjectCard {...project} />
+          </div>
+        );
       });
     }
   };

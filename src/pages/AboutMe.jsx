@@ -95,7 +95,7 @@ function AboutMe() {
             <div className="my-skills-stack-section">
               <h3>Front-end</h3>
               <div>
-                {skills.map((skill) => {
+                {skills.map((skill, index) => {
                   if (skill.type == "front-end") {
                     return (
                       <div
@@ -104,6 +104,7 @@ function AboutMe() {
                           alignItems: "center",
                           flexDirection: "column",
                         }}
+                        key={index}
                       >
                         <img
                           src={skill.icon}
@@ -119,7 +120,7 @@ function AboutMe() {
             <div className="my-skills-stack-section">
               <h3>Back-end</h3>
               <div>
-                {skills.map((skill) => {
+                {skills.map((skill, index) => {
                   if (skill.type == "back-end") {
                     return (
                       <div
@@ -128,6 +129,7 @@ function AboutMe() {
                           alignItems: "center",
                           flexDirection: "column",
                         }}
+                        key={index}
                       >
                         <img
                           src={skill.icon}
@@ -143,7 +145,7 @@ function AboutMe() {
             <div className="my-skills-stack-section">
               <h3>Database</h3>
               <div>
-                {skills.map((skill) => {
+                {skills.map((skill, index) => {
                   if (skill.type == "database") {
                     return (
                       <div
@@ -152,6 +154,7 @@ function AboutMe() {
                           alignItems: "center",
                           flexDirection: "column",
                         }}
+                        key={index}
                       >
                         <img
                           src={skill.icon}
@@ -167,7 +170,7 @@ function AboutMe() {
             <div className="my-skills-stack-section">
               <h3>Others</h3>
               <div>
-                {skills.map((skill) => {
+                {skills.map((skill, index) => {
                   if (skill.type == "others") {
                     return (
                       <div
@@ -176,6 +179,7 @@ function AboutMe() {
                           alignItems: "center",
                           flexDirection: "column",
                         }}
+                        key={index}
                       >
                         <img
                           src={skill.icon}
@@ -205,6 +209,7 @@ function AboutMe() {
               >
                 Tutors Finland Oy
               </h4>
+
               <div
                 style={{
                   marginTop: "20px",
@@ -234,15 +239,36 @@ function AboutMe() {
                 </p>
               </div>
             </div>
+            <div>
+              <ActionButton
+                link={
+                  "https://drive.google.com/file/d/1r83C1vLvOS20020jv6HdWTjBuzmZs2H-/view?usp=sharing"
+                }
+                text={"Read Testimonial"}
+              />
+            </div>
           </div>
         </div>
         <div className="my-education">
           <h2>My Education</h2>
           <div className="my-education-stack">
             <div>
-              <div style={{ display: "flex", justifyContent: "space-between" }}>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  cursor: "pointer",
+                }}
+                title="Click to see certification"
+                onClick={() => {
+                  window.open(
+                    "https://drive.google.com/file/d/1lwG6ahoUK723W1t2DOuR33Xq81Z1NvMH/view?usp=sharing",
+                    "_blank"
+                  );
+                }}
+              >
                 <h3>FULL STACK DEVELOPMENT PROGRAM</h3>
-                <p>Aug 2023 - Present</p>
+                <p>Aug 2023 - Jan 2024</p>
               </div>
               <h4
                 style={{
@@ -252,11 +278,14 @@ function AboutMe() {
                 Integrify Academy
               </h4>
             </div>
+            <ul></ul>
+
             <div>
               <div style={{ display: "flex", justifyContent: "space-between" }}>
-                <h3>FULL STACK WEB DEVELOPER PROGRAM</h3>
+                <h3>Information and Communications Technology</h3>
                 <p>Aug 2022 - Dec 2023</p>
               </div>
+              <h4>Vocational Qualification (180cr)</h4>
               <h4
                 style={{
                   color: "var(--secondary-color)",
@@ -265,11 +294,14 @@ function AboutMe() {
                 Helsinki Business College
               </h4>
             </div>
+            <ul></ul>
+
             <div>
               <div style={{ display: "flex", justifyContent: "space-between" }}>
-                <h3>BACHELOR IN ENGINEERING</h3>
+                <h3>Material Processing Technology</h3>
                 <p>Aug 2015 - Dec 2020</p>
               </div>
+              <h4>Bachelor of Engineering</h4>
               <h4
                 style={{
                   color: "var(--secondary-color)",
