@@ -27,7 +27,12 @@
         "icon": "/assets/icons/mui.png"
       }
     ],
-    "images": ["/assets/mechat/mechat1.png"]
+    "images": [
+      {
+        "src": "/assets/mechat/mechat1.png",
+        "title": "User Interface"
+      }
+    ]
   },
   {
     "name": "EcomEcho e-commerce platform",
@@ -62,11 +67,26 @@
       }
     ],
     "images": [
-      "/assets/ecomecho/ecomecho1.png",
-      "/assets/ecomecho/ecomecho2.png",
-      "/assets/ecomecho/ecomecho3.png",
-      "/assets/ecomecho/ecomecho4.png",
-      "/assets/ecomecho/ecomecho5.png"
+      {
+        "src": "/assets/ecomecho/ecomecho1.png",
+        "title": "Home page"
+      },
+      {
+        "src": "/assets/ecomecho/ecomecho2.png",
+        "title": "Product Page"
+      },
+      {
+        "src": "/assets/ecomecho/ecomecho3.png",
+        "title": "Cart Page"
+      },
+      {
+        "src": "/assets/ecomecho/ecomecho4.png",
+        "title": "Admin User Panel"
+      },
+      {
+        "src": "/assets/ecomecho/ecomecho5.png",
+        "title": "Create new product function"
+      }
     ]
   },
   {
@@ -98,11 +118,26 @@
       }
     ],
     "images": [
-      "/assets/exove/exove1.png",
-      "/assets/exove/exove2.png",
-      "/assets/exove/exove3.png",
-      "/assets/exove/exove4.png",
-      "/assets/exove/exove5.png"
+      {
+        "src": "/assets/exove/exove1.png",
+        "title": "User Dashboard"
+      },
+      {
+        "src": "/assets/exove/exove2.png",
+        "title": "Admin Dashboard"
+      },
+      {
+        "src": "/assets/exove/exove3.png",
+        "title": "Notification"
+      },
+      {
+        "src": "/assets/exove/exove4.png",
+        "title": "Feedback form"
+      },
+      {
+        "src": "/assets/exove/exove5.png",
+        "title": "Personal Performance Chart"
+      }
     ]
   },
   {
@@ -122,11 +157,14 @@
       }
     ],
     "images": [
-      "/assets/skillsbridge/skillsbridge1.png",
-      "/assets/skillsbridge/skillsbridge2.png",
-      "/assets/skillsbridge/skillsbridge3.png",
-      "/assets/skillsbridge/skillsbridge4.png",
-      "/assets/skillsbridge/skillsbridge5.png"
+      {
+        "src": "/assets/skillsbridge/skillsbridge1.png",
+        "title": "Hero & About Section"
+      },
+      {
+        "src": "/assets/skillsbridge/skillsbridge2.png",
+        "title": "Path, Support and Footer section"
+      }
     ]
   },
   {
@@ -146,8 +184,14 @@
       }
     ],
     "images": [
-      "/assets/travelplanner/travelplanner1.png",
-      "/assets/travelplanner/travelplanner2.png"
+      {
+        "src": "/assets/travelplanner/travelplanner1.png",
+        "title": "Create a trip page"
+      },
+      {
+        "src": "/assets/travelplanner/travelplanner2.png",
+        "title": "Home page"
+      }
     ]
   }
 ]

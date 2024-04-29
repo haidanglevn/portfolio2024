@@ -1,0 +1,86 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-body {
+  background: var(--gray-color);
+  padding: 20px;
+  border-radius: 5px;
+  width: 70%;
+  max-width: 90vw;
+  max-height: 95vh;
+  overflow-y: auto;
+}
+
+.modal-focus-img {
+  height: 500px;
+  max-width: 90%;
+}
+
+.image-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.image-grid-item {
+  width: 200px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.close-button {
+  position: absolute;
+  background-color: var(--secondary-color);
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 24px;
+  right: 100px;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .modal-body {
+    max-width: none;
+    max-height: none;
+    width: 100%;
+    height: max-content;
+  }
+
+  .modal-focus-img {
+    max-width: 100%;
+    object-fit: contain;
+  }
+
+  .image-grid {
+    overflow-x: scroll;
+  }
+
+  .close-button {
+    right: auto;
+    bottom: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .image-grid-item {
+    width: 150px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .modal-focus-img {
+    height: 700px;
+  }
+}

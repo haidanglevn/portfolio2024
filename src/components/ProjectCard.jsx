@@ -6,19 +6,7 @@ import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import { Link } from "react-router-dom";
 
-function ProjectCard(project, index) {
-  // function createTechStackString() {
-  //   if (project.techStack.length <= 3) {
-  //     return project.techStack.map((tech) => tech.name).join(", ");
-  //   } else {
-  //     let string = project.techStack
-  //       .slice(0, 3)
-  //       .map((tech) => tech.name)
-  //       .join(", ");
-  //     return (string += ",...");
-  //   }
-  // }
-
+function ProjectCard({ project, openModal }) {
   function createTechStackIcon() {
     return project.techStack.map((tech) => {
       return (
@@ -34,8 +22,11 @@ function ProjectCard(project, index) {
 
   return (
     <div className="project-card">
-      <div className="project-card-img">
-        <img src={project.images[0]}></img>
+      <div
+        className="project-card-img"
+        onClick={() => openModal(project.images)}
+      >
+        <img src={project.images[0].src}></img>
       </div>
       <div className="project-card-info">
         <h3>{project.name}</h3>

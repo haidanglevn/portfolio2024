@@ -13,9 +13,33 @@ import projectsData from "../ProjectsData.json";
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import EmojiCircle from "../components/EmojiCircle";
+import Modal from "../components/Modal";
 
 function Home() {
   const [projects, setProjects] = useState([]);
+  const [selectedProjectImages, setSelectedProjectImages] = useState([]);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = (images) => {
+    setSelectedProjectImages(images);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => setIsModalOpen(false);
+
+  // Disable scrolling when modal is open
+  useEffect(() => {
+    if (isModalOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto"; // Re-enable scrolling
+    }
+
+    // Cleanup function to ensure scrolling is enabled when component unmounts
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isModalOpen]);
 
   useEffect(() => {
     if (projectsData.length !== 0) {
@@ -28,7 +52,9 @@ function Home() {
       return <div>Loading...</div>;
     } else {
       return projects.map((project, index) => {
-        return <ProjectCard {...project} key={index} />;
+        return (
+          <ProjectCard project={project} key={index} openModal={openModal} />
+        );
       });
     }
   };
@@ -190,6 +216,13 @@ function Home() {
             </div>
           </div>
         </div>
+
+        <Modal
+          isOpen={isModalOpen}
+          close={closeModal}
+          images={selectedProjectImages}
+        ></Modal>
+
         <Footer />
       </div>
     </div>
