@@ -1,17 +1,19 @@
 .about-me-outline {
   padding: 5rem;
   width: 100%;
+  max-width: 1260px;
+  margin: 0 auto;
 }
 .portrait {
-  height: 400px;
-  width: 400px;
+  height: 350px;
+  width: 350px;
 }
 
 .about-hero {
   display: flex;
-  justify-content: space-between;
-  /* background-color: aqua; */
-  gap: 200px;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
   margin-bottom: 100px;
 }
 
@@ -40,20 +42,12 @@
   flex-wrap: wrap;
 }
 
-.my-skills-stack-right {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
 .my-skills-stack-section {
-  border: 1px solid var(--secondary-color);
-  height: max-content;
-  width: 25vw;
+  border: 5px solid var(--secondary-color);
+  height: 230px;
+  width: max-content;
   border-radius: 20px;
-  padding: 20px;
+  padding: 30px;
 }
 
 .my-skills-stack-section div {
@@ -83,6 +77,11 @@
   gap: 20px;
 }
 
+.my-experience-stack-header {
+  display: flex;
+  justify-content: space-between;
+}
+
 @media (max-width: 1200px) {
   .about-me-outline {
     padding: 0 60px;
@@ -108,5 +107,18 @@
   .my-experience-stack,
   .my-education-stack {
     width: auto;
+  }
+}
+
+@media (max-width: 750px) {
+  .my-experience-stack-header {
+    flex-direction: column;
+  }
+}
+@media (max-width: 550px) {
+  .my-skills-stack-section {
+    height: max-content;
+    width: max-content;
+    padding: 30px;
   }
 }

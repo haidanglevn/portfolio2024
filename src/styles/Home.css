@@ -1,21 +1,29 @@
 .home-outline {
   padding: 0 10rem;
+  margin: 0 auto;
 }
 
 .hero {
-  min-height: 80vh;
+  min-height: 40em;
+  width: 100%;
+  max-width: 960px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 5rem;
   padding-bottom: 65px;
+  margin: 0 auto;
 }
 
 .hero-left {
+  position: relative;
+}
+
+.hero-right {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: left;
+  align-items: flex-start;
 }
 
 .button-stack {
@@ -26,7 +34,8 @@
 }
 
 .portrait {
-  height: 30em;
+  border-radius: 50%;
+  border: 5px solid var(--secondary-color);
 }
 
 @media (max-width: 1200px) {
@@ -47,7 +56,7 @@
   }
 
   .portrait {
-    height: 25rem;
+    height: 15rem;
   }
 
   .button-stack {
@@ -76,9 +85,6 @@
   gap: 3rem;
 }
 
-@media (max-width: 1200px) {
-}
-
 @media (max-width: 960px) {
   .featured-projects {
     align-items: center;
@@ -102,5 +108,21 @@
   .about-title {
     width: 100%;
     padding: 0 1rem;
+  }
+}
+
+/* change the project flex direction to row in very large screen */
+@media (min-width: 1500px) {
+  .hero {
+    min-height: 20rem;
+  }
+  .home-outline {
+    padding: 0 5rem;
+  }
+
+  .featured-projects-stack {
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
   }
 }

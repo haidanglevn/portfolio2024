@@ -2,10 +2,9 @@ import React, { useEffect, useState } from "react";
 import Header from "../components/Header";
 import "../styles/AboutMe.css";
 import { Button, IconButton } from "@mui/material";
-import EastIcon from "@mui/icons-material/East";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import portrait from "/assets/portrait.png";
+import portrait from "/assets/cvcrop.png";
 
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
@@ -19,8 +18,10 @@ function AboutMe() {
       <Header />
       <div className="about-me-outline">
         <div className="about-hero">
+          <div className="portrait-div">
+            <img src={portrait} alt="portrait" className="portrait" />
+          </div>
           <div className="about-hero-left">
-            <h2>About me</h2>
             <div style={{ margin: "20px 0" }}>
               <h3>I am a software developer based in Helsinki, Finland.</h3>
               <p>
@@ -28,8 +29,11 @@ function AboutMe() {
                 career change in 2022. I studied software development at
                 Helsinki Business College and at Integrify, honing my skills
                 through various team projects and internships. My tech stacks
-                include React & Redux, Typescript, C# .Net Core, Firebase,
-                PostgreSQL and more.
+                include{" "}
+                <span>
+                  React & Redux, Typescript, C# .Net Core, Firebase, PostgreSQL
+                </span>{" "}
+                and more.
               </p>
               <div className="button-stack">
                 <ActionButton
@@ -84,9 +88,6 @@ function AboutMe() {
                 </IconButton>
               </div>
             </div>
-          </div>
-          <div className="portrait-div">
-            <img src={portrait} alt="portrait" className="portrait" />
           </div>
         </div>
         <div className="my-skills">
@@ -198,17 +199,21 @@ function AboutMe() {
           <h2>My Experience</h2>
           <div className="my-experience-stack">
             <div>
-              <div style={{ display: "flex", justifyContent: "space-between" }}>
-                <h3>JUNIOR WEB & MOBILE DEVELOPER</h3>
+              <div className="my-experience-stack-header">
+                <div>
+                  <h3>JUNIOR WEB & MOBILE DEVELOPER</h3>
+                  <h4
+                    style={{
+                      color: "var(--secondary-color)",
+                      marginBottom: "10px",
+                    }}
+                  >
+                    Tutors Finland Oy
+                  </h4>
+                </div>
+
                 <p>May 2023 - November 2023</p>
               </div>
-              <h4
-                style={{
-                  color: "var(--secondary-color)",
-                }}
-              >
-                Tutors Finland Oy
-              </h4>
 
               <div
                 style={{

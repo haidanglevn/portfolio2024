@@ -1,7 +1,7 @@
 import { React, useState, useEffect } from "react";
 import Header from "../components/Header";
 import "../styles/Home.css";
-import portrait from "/assets/portrait.png";
+import portrait from "/assets/cvcrop.png";
 import ActionButton from "../components/ActionButton";
 import { Button, IconButton } from "@mui/material";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -12,6 +12,7 @@ import ProjectCard from "../components/ProjectCard";
 import projectsData from "../ProjectsData.json";
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
+import EmojiCircle from "../components/EmojiCircle";
 
 function Home() {
   const [projects, setProjects] = useState([]);
@@ -27,11 +28,7 @@ function Home() {
       return <div>Loading...</div>;
     } else {
       return projects.map((project, index) => {
-        return (
-          <div key={index}>
-            <ProjectCard {...project} />
-          </div>
-        );
+        return <ProjectCard {...project} key={index} />;
       });
     }
   };
@@ -42,13 +39,18 @@ function Home() {
       <div className="home-outline">
         <div className="hero">
           <div className="hero-left">
-            <h1>
-              Dang, <br /> let's code!
-            </h1>
+            <img src={portrait} alt="portrait" className="portrait" />
+            <EmojiCircle />
+          </div>
+
+          <div className="hero-right">
+            <h2>Hey, I'm Dang 🎉</h2>
             <p>
-              A Helsinki based full-stack developer with passion for consumer{" "}
-              <br /> mobile technology and creating aesthetic websites.
+              I'm a Helsinki based full-stack developer with passion for
+              consumer <br /> mobile technology and creating aesthetic websites.
             </p>
+            <br />
+            <p>Scroll down to see my projects and learn more about me 👇</p>
             <div className="button-stack">
               <ActionButton
                 text="Download CV"
@@ -102,7 +104,6 @@ function Home() {
               </IconButton>
             </div>
           </div>
-          <img src={portrait} alt="portrait" className="portrait" />
         </div>
         <div id="featured-projects" className="featured-projects">
           <div className="featured-projects-title">

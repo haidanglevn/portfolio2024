@@ -2,8 +2,12 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 20px;
-  height: 600px;
+  gap: 50px;
+  height: max-content;
+  background-color: var(--gray-color);
+  border-radius: 1rem;
+  border: 3px solid var(--secondary-color);
+  padding: 20px;
 }
 
 .project-card-info {
@@ -21,6 +25,7 @@
   width: 600px;
   height: 600px;
   border-radius: 30px;
+  cursor: pointer;
 }
 
 .project-card-img img {
@@ -54,12 +59,20 @@
   }
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1800px) {
   .project-card {
+    flex-direction: column;
+    height: max-content;
+    width: min-content;
     gap: 10px;
   }
 
-  .project-card-info {
-    width: 50%;
+  .project-card-img {
+    max-width: 350px;
+    height: max-content;
+  }
+
+  .project-card-img img {
+    max-width: 350px;
   }
 }
