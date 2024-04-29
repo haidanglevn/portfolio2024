@@ -81,7 +81,7 @@ function Home() {
               <ActionButton
                 text="Download CV"
                 link={
-                  "https://drive.google.com/file/d/1D8iUJTy_0G-QeNfG_wKRaq4xWo10kgdj/view?usp=sharing"
+                  "https://drive.google.com/file/d/1vvSXYvnCM-uobBkVhmKL-OO2cozx89i1/view?usp=sharing"
                 }
               />
               <IconButton
