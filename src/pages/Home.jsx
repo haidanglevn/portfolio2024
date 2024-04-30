@@ -15,6 +15,9 @@ import Footer from "../components/Footer";
 import EmojiCircle from "../components/EmojiCircle";
 import Modal from "../components/Modal";
 
+const cvLink =
+  "https://drive.google.com/file/d/1vvSXYvnCM-uobBkVhmKL-OO2cozx89i1/view?usp=sharing";
+
 function Home() {
   const [projects, setProjects] = useState([]);
   const [selectedProjectImages, setSelectedProjectImages] = useState([]);
@@ -78,12 +81,7 @@ function Home() {
             <br />
             <p>Scroll down to see my projects and learn more about me 👇</p>
             <div className="button-stack">
-              <ActionButton
-                text="Download CV"
-                link={
-                  "https://drive.google.com/file/d/1vvSXYvnCM-uobBkVhmKL-OO2cozx89i1/view?usp=sharing"
-                }
-              />
+              <ActionButton text="Download CV" link={cvLink} />
               <IconButton
                 sx={{
                   backgroundColor: "var(--gray-color)",

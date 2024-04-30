@@ -12,6 +12,9 @@ import ActionButton from "../components/ActionButton";
 
 import skills from "../Skills.json";
 
+const cvLink =
+  "https://drive.google.com/file/d/1vvSXYvnCM-uobBkVhmKL-OO2cozx89i1/view?usp=sharing";
+
 function AboutMe() {
   return (
     <div>
@@ -36,12 +39,7 @@ function AboutMe() {
                 and more.
               </p>
               <div className="button-stack">
-                <ActionButton
-                  text="Download CV"
-                  link={
-                    "https://drive.google.com/file/d/1ug8E0pTO9EkIKPqMPHbkw2f3zuiAeWqa/view?usp=sharing"
-                  }
-                />
+                <ActionButton text="Download CV" link={cvLink} />
                 <IconButton
                   sx={{
                     backgroundColor: "var(--gray-color)",
