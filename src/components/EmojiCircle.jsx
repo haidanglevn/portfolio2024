@@ -44,7 +44,7 @@ const EmojiCircle = () => {
 
   // Function to handle navigation
   const handleNavigate = () => {
-    navigate("/new-page"); // Navigate to the route you want when clicked
+    // navigate("/new-page"); // Navigate to the route you want when clicked
   };
 
   const renderEmoji =

@@ -137,35 +137,6 @@ function Home() {
               become a <br />
               full-stack developer:
             </p>
-            <Button
-              endIcon={<EastIcon />}
-              sx={{
-                backgroundColor: "var(--secondary-color)",
-                fontWeight: "bold",
-                color: "black",
-                height: "54px",
-                padding: "20px",
-                margin: "20px 0",
-                borderRadius: "100px",
-                transition: "transform 1s",
-                "& .MuiButton-endIcon": {
-                  transition: "transform 1s",
-                },
-                "& a": {
-                  color: "black",
-                  marginRight: "10px",
-                },
-                "&:hover": {
-                  transform: "scale(1.1)",
-                  backgroundColor: "var(--secondary-color)",
-                  "& .MuiButton-endIcon": {
-                    transform: "scale(1.5)",
-                  },
-                },
-              }}
-            >
-              <Link to={"/"}>See all projects</Link>
-            </Button>
           </div>
           <div className="featured-projects-stack">{renderProjectCards()}</div>
         </div>
